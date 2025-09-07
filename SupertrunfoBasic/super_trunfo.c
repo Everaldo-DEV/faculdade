@@ -18,10 +18,10 @@ int main(){
     printf("Isira os dados  da Primeira carta:\n");
 
     printf("Digite o nome da cidade: ");
-    scanf("%s",nome);
+    fgets(nome, 30 , stdin);
 
     printf("Digite o estado da cidade: ");
-    scanf("%s",estado);
+    fgets(estado, 20 , stdin);
 
     printf("Digite o codigo da cidade: ");
     scanf("%s",codigo);
@@ -44,10 +44,10 @@ int main(){
     printf("Isira os dados  da Segunda carta:\n");
     
     printf("Digite o nome da cidade: ");
-    scanf("%s",nome2);
+    fgets(nome2, 30 , stdin);
 
     printf("Digite o estado da cidade: ");
-    scanf("%s",estado2);
+    fgets(estado2, 20 , stdin);
 
     printf("Digite o codigo da cidade: ");
     scanf("%s",codigo2);
@@ -66,8 +66,8 @@ int main(){
 
     // Saida dos dados das cartas//
 
-    printf("\n------%s------\nCidade : %s\nEstado: %s\nCodigo: %s\nPopulacao: %d\nArea: %.2fkm²\nPIB: %.2f\nPontos Turisticos: %d\n----------------",codigo,nome,estado,codigo,populacao,area,PIB,pontosTuristicos);
-    printf("\n------%s-------\nCidade : %s\nEstado: %s\nCodigo: %s\nPopulacao: %d\nArea: %.2fkm²\nPIB: %.2f\nPontos Turisticos: %d\n-------------\n",codigo2,nome2,estado2,codigo2,populacao2,area2,PIB2,pontosTuristicos2);
+    printf("\n------%s------\nCidade : %sEstado: %sCodigo: %s\nPopulacao: %d\nArea: %.2fkm²\nPIB: %.2f\nPontos Turisticos: %d\n----------------",codigo,nome,estado,codigo,populacao,area,PIB,pontosTuristicos);
+    printf("\n------%s-------\nCidade : %sEstado: %sCodigo: %s\nPopulacao: %d\nArea: %.2fkm²\nPIB: %.2f\nPontos Turisticos: %d\n-------------\n",codigo2,nome2,estado2,codigo2,populacao2,area2,PIB2,pontosTuristicos2);
     
     return 0;
 }

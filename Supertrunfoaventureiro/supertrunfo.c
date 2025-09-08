@@ -4,13 +4,15 @@ int main(){
 
     // Declaração das variáveis para a primeira carta//
     int pontosTuristicos;
-    float area,populacao,PIB,DensidadePopulacional,pibPerCapita;
+    float area,populacao,PIB,DensidadePopulacional;
+    float pibPerCapita;
     char nome[30],estado[10] ;
     char codigo[4];
     
     // Declaração das variáveis para a segunda carta//
     int pontosTuristicos2;
-    float area2,populacao2,PIB2,DesnsidadePopulacional2, pibPerCapita2;
+    float area2,populacao2,PIB2,DesnsidadePopulacional2;
+    float pibPerCapita2;
     char nome2[30],estado2[10] ;
     char codigo2[4];
     
@@ -26,20 +28,20 @@ int main(){
     printf("Digite o codigo da cidade: ");
     scanf("%s",codigo);
 
-    printf("Digite a populacao da cidade: ");
+    printf("Digite a populacao da cidade, em milhoes de habitantes: ");
     scanf("%f",&populacao);
 
     printf("Digite a area da cidade em km²: ");
     scanf("%f",&area);
     
-    printf("Digite o PIB da cidade, em milhoes: ");
+    printf("Digite o PIB da cidade, em milhoes de Reais: ");
     scanf("%f",&PIB);
 
     printf("Digite o numero de pontos turisticos da cidade: ");
     scanf("%d",&pontosTuristicos);
 
     printf("///////////////////////////////////\n");   // Separador entre as cartas//
-   
+/*
     // Entrada de dados da segunda carta//
     printf("Isira os dados  da Segunda carta:\n");
     
@@ -52,7 +54,7 @@ int main(){
     printf("Digite o codigo da cidade: ");
     scanf("%s",codigo2);
 
-    printf("Digite a populacao da cidade: ");
+    printf("Digite a populacao da cidade, em milhoes de habitantes: ");
     scanf("%f",&populacao2);
 
     printf("Digite a area da cidade em km²: ");
@@ -62,16 +64,22 @@ int main(){
     scanf("%f",&PIB2);
 
     printf("Digite o numero de pontos turisticos da cidade: ");
-    scanf("%d",&pontosTuristicos2);
+    scanf("%d",&pontosTuristicos2);*/
 
-    //calculo do pib per capita//
-    pibPerCapita= PIB/populacao;
-    pibPerCapita2= PIB2/populacao2;
-
+  // preparando as variaveis para o calculo final//
+    populacao=populacao*1000000;
+    populacao2=populacao2*1000000;
+    PIB=PIB*1000000;
+    PIB2=PIB2*1000000;
+   
     //Calculo da densidade populacional//
     DensidadePopulacional= populacao/area;
     DesnsidadePopulacional2= populacao2/area2; 
 
+
+    //calculo do pib per capita//
+     pibPerCapita= PIB/populacao;
+     pibPerCapita2= PIB2/populacao2;
 
     // Saida dos dados das cartas//
 

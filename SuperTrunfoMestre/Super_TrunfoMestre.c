@@ -144,25 +144,25 @@ int main(){
     printf("Codigo: %s\n", codigo2);
 
     printf("Populacao: %.2f de Habitantes ", populacao2);
-    printf("(%d)\n", populacao2>=populacao);
+    printf("(%d)\n", populacao2 > populacao);
 
     printf("Area: %.2fkm² " , area2);
-    printf("(%d)\n", area2>=area);
+    printf("(%d)\n", area2 > area);
 
     printf("PIB: %.2f Milhoes de reais ", PIB2);
-    printf("(%d)\n", PIB2>=PIB);
+    printf("(%d)\n", PIB2 > PIB);
 
     printf("Pontos Turisticos: %d ", pontosTuristicos2);
-    printf("(%d)\n", pontosTuristicos2>=pontosTuristicos);
+    printf("(%d)\n", pontosTuristicos2 > pontosTuristicos);
 
     printf("Densidade Demografica: %.2f hab/km² ", DesnsidadePopulacional2);
-    printf("(%d)\n", DesnsidadePopulacional2>=DensidadePopulacional);
+    printf("(%d)\n", DesnsidadePopulacional2 > DensidadePopulacional);
     
     printf("PIB per capita: %.2f Reais por habitante ", pibPerCapita2);
-    printf("(%d)\n", pibPerCapita2>=pibPerCapita);
+    printf("(%d)\n", pibPerCapita2 > pibPerCapita);
 
     printf("Super Poder: ");
-    printf("(%d)\n", superPoder2>=superPoder);
+    printf("(%d)\n", superPoder2 > superPoder);
 
 
     printf("----------------\n");
